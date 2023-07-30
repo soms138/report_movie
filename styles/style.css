@@ -1,66 +1,302 @@
-header {}
-header .h_user {}
-header .h_user a {}
-header .h_user a img {}
-header .h_user a span {}
+/* margin,width */
+header .h_top,header .h_title,header .nav_open,main .chart,main .cine_wrap,footer.top,footer.btm {
+    margin: 0 auto;
+    width: 1160px;
+}
+header {
+    background: #00056A;
+    padding: 30px 0 20px;
+}
+header .h_top {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content:space-between;
+}
+header .h_top h1 {
+    font-family:'메인';
+    font-size: 5rem;
+    color: #F0DE36;
+}
+header .h_top h1 a {}
+header .h_top .h_user {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 284px;
+}
+header .h_top .h_user a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+header .h_top .h_user a img {
+    width: 20px; height: 20px;
+    margin-right: 10px;
+}
+header .h_top .h_user a span {
+    font-size: 0.75rem;
+    color: #fff;
+}
+
 header .h_title {}
-header .h_title nav {}
-header .h_title nav ul {}
-header .h_title nav ul li {}
-header .h_title nav ul li a {}
-header .h_title nav ul li a h1 {}
-header .h_title nav ul li a h1 img {}
+header .h_title nav {
+    margin-top: 30px;
+}
+header .h_title nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .h_title nav ul li {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+header .h_title nav ul li a {
+    position:relative;
+}
+header .h_title nav ul li a::after {
+    content:''; display:block;
+    width:100%; height:1px; background:#fff;
+    position:absolute; bottom:-10px;
+    transform:scaleX(0); transition:all 0.3s;
+}
+header .h_title nav ul li a:hover::after {
+    transform:scaleX(1);
+}
+header .h_title nav ul li a span {
+    font-size: 1.333rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+header .h_title nav ul li .nav_open {
+    background: #fff;
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    padding: 20px;
+}
+header .h_title nav ul li .nav_open a {
+    margin-bottom: 15px;
+}
+header .h_title nav ul li .nav_open a:last-child {
+    margin-bottom: 0px;
+}
 header .h_title #search_frm {}
-header .h_title #search_frm fieldset {}
-header .h_title #search_frm fieldset input {}
-header .h_title #search_frm fieldset #search_btn {}
+header .h_title #search_frm fieldset {
+    width: 370px;
+    background: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+header .h_title #search_frm fieldset input {
+    height: 40px;
+    width: 335px;
+}
+header .h_title #search_frm fieldset #search_btn {
+    background: none;
+}
 header .h_title #search_frm fieldset #search_btn img {}
-header .nav_open {}
+header .nav_open {
+    /* display: none; */
+    position: absolute;
+    top:100px;
+}
 header .nav_open ul {}
-header .nav_open ul li {}
+header .nav_open ul li {
+    background: #fff;
+    padding: 20px 20px;
+}
 header .nav_open ul li a {}
 main {}
-main #movie_slide {}
+main #movie_slide {
+    width: 100%;
+    height: 650px;
+    background: #F0DE36;
+}
 main #movie_slide .swiper-wrapper {}
 main #movie_slide .swiper-wrapper .swiper-slide {}
-main #movie_slide .swiper-wrapper .slide1 {}
-main #movie_slide .swiper-wrapper .slide2 {}
-main #movie_slide .swiper-wrapper .slide3 {}
-main #movie_slide .swiper-wrapper .slide4 {}
-main #movie_slide .swiper-button-prev {}
-main #movie_slide .swiper-button-next {}
-main .chart {}
-main .chart .c_top {}
-main .chart .c_top h1 {}
-main .chart .c_top p {}
-main .chart .c_top p span {}
-main .chart .c_top p img {}
-main .chart ul {}
-main .chart ul .ranking {}
-main .chart ul .ranking .m_img {}
-main .chart ul .ranking .m_img p {}
-main .chart ul .ranking .contents {}
-main .chart ul .ranking .contents h2 {}
-main .chart ul .ranking .contents h2 .etc {}
-main .chart ul .ranking .contents h2 .etc img {}
-main .chart ul .ranking .contents h2 .etc span {}
-main .chart ul .ranking .contents h2 .ticket_btn {}
-main .chart ul .ranking .contents h2 .ticket_btn p {}
+main #movie_slide .swiper-wrapper .slide1 {
+    background: url(../images/slide1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+main #movie_slide .swiper-wrapper .slide2 {
+    background: url(../images/slide2.jpg) no-repeat center;
+    background-size: cover;
+}
+main #movie_slide .swiper-wrapper .slide3 {
+    background: url(../images/slide3.jpg) no-repeat center;
+    background-size: cover;
+}
+main #movie_slide .swiper-wrapper .swiper-slide {}
+main #movie_slide .swiper-wrapper .swiper-slide h2 {
+    position: absolute;
+    top: 50%;
+    left: 202px;
+}
+main #movie_slide .swiper-wrapper .swiper-slide p {}
+main #movie_slide .swiper-wrapper .swiper-slide a {}
+main #movie_slide .swiper-wrapper .swiper-slide a span {}
+main #movie_slide .swiper-wrapper .swiper-slide a img {}
+main #movie_slide .swiper-button-prev,
+main #movie_slide .swiper-button-next {
+    width: 70px; height: 70px;
+}
+main #movie_slide .swiper-button-prev {
+    background: url(../images/prev.png) no-repeat;
+}
+main #movie_slide .swiper-button-next {
+    background: url(../images/next.png) no-repeat;
+}
+main .chart {
+    margin: 50px auto;
+}
+main .chart .c_top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+main .chart .c_top h1 {
+    font-size: 1.777rem;
+    font-weight: 700;
+}
+main .chart .c_top p {
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+main .chart .c_top p span {margin-right: 10px;}
+main .chart .c_top p img {width: 15px;}
+main .chart ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .chart ul .ranking {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .chart ul .ranking .m_img {
+    width: 250px; height: 350px;
+    border-radius: 10px;
+}
+main .chart ul .ranking:nth-child(1) .m_img {
+    background: url(../images/poster1.jpg) no-repeat center;
+    background-size: cover;
+}
+main .chart ul .ranking:nth-child(2) .m_img {
+    background: url(../images/poster2.jpg) no-repeat center;
+    background-size: cover;
+}
+main .chart ul .ranking:nth-child(3) .m_img {
+    background: url(../images/poster3.jpg) no-repeat center;
+    background-size: cover;
+}
+main .chart ul .ranking:nth-child(4) .m_img {
+    background: url(../images/poster4.jpg) no-repeat center;
+    background-size: cover;
+}
+main .chart ul .ranking .m_img p {
+    font-size: 3.157rem;
+    font-weight: 500;
+    margin: 10px 0 0 15px;
+    transform: skewX(-10deg);
+    color: #fff;
+}
+main .chart ul .ranking:last-child .m_img p {color: black;}
+main .chart ul .ranking .contents {
+    text-align: center;
+    padding: 20px 0;
+}
+main .chart ul .ranking .contents h2 {
+    font-size: 1.333rem;
+    font-weight: 500;
+}
+main .chart ul .ranking .contents .etc {
+    display: inline-block;
+    margin: 20px 0;
+}
+main .chart ul .ranking .contents .etc span {}
+main .chart ul .ranking .contents .etc span:first-child {
+    border-right: 1px solid #aaa;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+main .chart ul .ranking .contents a {
+    display: block;
+    padding: 10px 0;
+    width: 250px;
+    background: #D71313;
+    border-radius: 50px;
+    color: #fff;
+}
 main .cine_wrap {}
-main .cine_wrap div {}
-main .cine_wrap div em {}
-main .cine_wrap div span {}
-main .cine_wrap div span img {}
-main .cine_wrap div ul {}
-main .cine_wrap div ul li {}
-main .cine_wrap div ul li a {}
-main .cine_wrap div ul li a .thumbnail {}
-main .cine_wrap div ul li a .title {}
-main .cine_wrap div ul li a .price {}
-main .user_wrap {}
-main .user_wrap a {}
-main .user_wrap a img {}
-main .user_wrap a img span {}
+main .cine_wrap .cine_title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+main .cine_wrap .cine_title h1 {
+    font-size: 1.777rem;
+    font-weight: 700;
+}
+main .cine_wrap .cine_title p {
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+main .cine_wrap .cine_title p span {margin-right: 10px;}
+main .cine_wrap .cine_title p span img {width: 15px;}
+main .cine_wrap .banner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: aqua;
+}
+main .cine_wrap .banner .left {
+    background: #D71313;
+    margin-right: 40px;
+}
+main .cine_wrap .banner .left .top {}
+main .cine_wrap .banner .left .top img {
+    width: 700px; height: 300px;
+    margin-bottom: 40px;
+}
+main .cine_wrap .banner .left .btm {}
+main .cine_wrap .banner .left .btm img:first-child {
+    width: 450px; height: 200px;
+    margin-right: 40px;
+}
+main .cine_wrap .banner .left .btm img:last-child {width: 210px; height: 200px;}
+main .cine_wrap .banner .right {}
+main .cine_wrap .banner .right img {width: 420px; height: 540px;}
+main .cine_wrap .user_wrap {}
+main .cine_wrap .user_wrap a {}
+main .cine_wrap .user_wrap a img {}
+main .cine_wrap .user_wrap a:nth-child(1) img {}
+main .cine_wrap .user_wrap a:nth-child(2) img {}
+main .cine_wrap .user_wrap a:nth-child(3) img {}
+main .cine_wrap .user_wrap a:nth-child(4) img {}
+main .cine_wrap .user_wrap a:nth-child(5) img {}
+main .cine_wrap .user_wrap a span {}
 footer {}
 footer .top {}
 footer .top .fnb_top {}
@@ -68,8 +304,11 @@ footer .top .fnb_top a {}
 footer .btm {}
 footer .btm .btm_left {}
 footer .btm .btm_left h2 {}
-footer .btm .btm_left h2 img {}
 footer .btm .btm_left address {}
 footer .btm .btm_left address a {}
 footer .btm .btm_right {}
 footer .btm .btm_right a {}
+footer .btm .btm_right a:nth-child(1) {}
+footer .btm .btm_right a:nth-child(2) {}
+footer .btm .btm_right a:nth-child(3) {}
+footer .btm .btm_right a:nth-child(4) {}

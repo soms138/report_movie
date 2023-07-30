@@ -1,6 +1,10 @@
 * {box-sizing:border-box;}
 /* local or web(@import) 글꼴 작성위치 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@font-face {
+    font-family:'메인'; /* 글꼴명 지정 */
+    src:url(../fonts/Haettenschweiler-Regular.ttf); /* 글꼴경로 지정 */
+}
 /* reset.css */
 html,body, /*구조태그*/
 h1,h2,h3,h4,h5,h6,p,blockquote,address, /*block*/
