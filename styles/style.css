@@ -4,7 +4,7 @@ header .h_top,header .h_title,header .nav_open,main .chart,main .cine_wrap,foote
     width: 1160px;
 }
 header {
-    background: #00056A;
+    background: #0f0c0e;
     padding: 30px 0 20px;
 }
 header .h_top {
@@ -13,12 +13,11 @@ header .h_top {
     align-items: flex-start;
     justify-content:space-between;
 }
-header .h_top h1 {
-    font-family:'메인';
-    font-size: 5rem;
-    color: #F0DE36;
-}
 header .h_top h1 a {}
+header .h_top h1 a img {
+    width: 200px;
+    
+}
 header .h_top .h_user {
     display: flex;
     flex-flow: row nowrap;
@@ -81,6 +80,8 @@ header .h_title nav ul li .nav_open {
     position: absolute;
     top: 200px;
     padding: 20px;
+    z-index: 200;
+    width: auto;
 }
 header .h_title nav ul li .nav_open a {
     margin-bottom: 15px;
@@ -116,45 +117,38 @@ header .nav_open ul li {
 }
 header .nav_open ul li a {}
 main {}
-main #movie_slide {
-    width: 100%;
+main .slide {
+    background: #0f0c0e;
+}
+main .slide #movie_slide {
+    max-width: 1160px; 
     height: 650px;
-    background: #F0DE36;
-}
-main #movie_slide .swiper-wrapper {}
-main #movie_slide .swiper-wrapper .swiper-slide {}
-main #movie_slide .swiper-wrapper .slide1 {
-    background: url(../images/slide1.jpg) no-repeat center;
-    background-size: cover;
     position: relative;
+    z-index: 100;
 }
-main #movie_slide .swiper-wrapper .slide2 {
-    background: url(../images/slide2.jpg) no-repeat center;
-    background-size: cover;
+/* !!!!!!!!!!!!!!!!!!!!!그라데이션 효과 넣기 */
+main .slide #movie_slide .swiper-wrapper {}
+main .slide #movie_slide .swiper-wrapper .swiper-slide {}
+main .slide #movie_slide .swiper-wrapper .slide1 {
+    background-color: aqua;
+    /* background: url(../images/slide1.jpg) no-repeat center;
+    background-size: cover; */
 }
-main #movie_slide .swiper-wrapper .slide3 {
-    background: url(../images/slide3.jpg) no-repeat center;
-    background-size: cover;
+main .slide #movie_slide .swiper-wrapper .slide2 {
+    background-color: aquamarine;
 }
-main #movie_slide .swiper-wrapper .swiper-slide {}
-main #movie_slide .swiper-wrapper .swiper-slide h2 {
-    position: absolute;
-    top: 50%;
-    left: 202px;
-}
-main #movie_slide .swiper-wrapper .swiper-slide p {}
-main #movie_slide .swiper-wrapper .swiper-slide a {}
-main #movie_slide .swiper-wrapper .swiper-slide a span {}
-main #movie_slide .swiper-wrapper .swiper-slide a img {}
-main #movie_slide .swiper-button-prev,
-main #movie_slide .swiper-button-next {
+main .slide #movie_slide .swiper-wrapper .slide3 {}
+main .slide #movie_slide .swiper-button-prev,
+main .slide #movie_slide .swiper-button-next {
     width: 70px; height: 70px;
 }
-main #movie_slide .swiper-button-prev {
+main .slide #movie_slide .swiper-button-prev {
     background: url(../images/prev.png) no-repeat;
+    left: 20px;
 }
-main #movie_slide .swiper-button-next {
+main .slide #movie_slide .swiper-button-next {
     background: url(../images/next.png) no-repeat;
+    right: 20px;
 }
 main .chart {
     margin: 50px auto;
@@ -240,11 +234,13 @@ main .chart ul .ranking .contents a {
     display: block;
     padding: 10px 0;
     width: 250px;
-    background: #D71313;
-    border-radius: 50px;
+    background: #037b94;
+    border-radius: 10px;
     color: #fff;
 }
-main .cine_wrap {}
+main .cine_wrap {
+    margin: 50px auto;
+}
 main .cine_wrap .cine_title {
     display: flex;
     flex-flow: row nowrap;
@@ -269,10 +265,8 @@ main .cine_wrap .banner {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background: aqua;
 }
 main .cine_wrap .banner .left {
-    background: #D71313;
     margin-right: 40px;
 }
 main .cine_wrap .banner .left .top {}
@@ -281,11 +275,14 @@ main .cine_wrap .banner .left .top img {
     margin-bottom: 40px;
 }
 main .cine_wrap .banner .left .btm {}
-main .cine_wrap .banner .left .btm img:first-child {
-    width: 450px; height: 200px;
-    margin-right: 40px;
+main .cine_wrap .banner .left .btm a {
+    display: inline-block;
 }
-main .cine_wrap .banner .left .btm img:last-child {width: 210px; height: 200px;}
+main .cine_wrap .banner .left .btm a:first-child img {
+    width: 450px; height: 200px;
+    margin-right: 36px;
+}
+main .cine_wrap .banner .left .btm a:last-child img {width: 210px; height: 200px;}
 main .cine_wrap .banner .right {}
 main .cine_wrap .banner .right img {width: 420px; height: 540px;}
 main .cine_wrap .user_wrap {}

@@ -45,13 +45,13 @@ category[5].addEventListener('mouseout',function(){
 
 const movie_slide = new Swiper('#movie_slide',{
     autoplay:{
-        delay:3000, 
-        disableOnInteraction:false
+        delay:1000,
+        disableOnInteraction:false 
     }, 
     loop:true, 
-    direction:'vertical',
+    direction:'horizontal',
     navigation: { 
         nextEl: '#movie_slide .swiper-button-next',
-        prevEl: '#movie_slide .swiper-button-prev',
+        prevEl: '#movie_slide .swiper-button-prev'
     }
 });
