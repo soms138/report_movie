@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="MEGABOX, 영화, 예매, 무비차트, 상영예정작, 영화예매, 상영스케줄, 영화관람권">
-    <meta name="description" content="영화를 사랑하는 모든 이들을 위한 MEGABOX, 영화에 대한 새로운 시선을 발견하고 자신만의 영화 여정을 떠날 수 있도록 합니다.">
+    <meta name="description" content="사람들과 공유할 수 있는, 공간경험을 만듭니다.">
     <title>MEGABOX</title>
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
@@ -12,6 +12,7 @@
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <header>
@@ -99,13 +100,7 @@
             <div class="swiper" id="movie_slide">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
-                        <!-- <h2>밀수</h2>
-                        <p>류승완 감독 액션 결정판!<br>
-                            물길을 아는 자가 돈길의 주인이 된다!</p>
-                        <a href="#">
-                            <span>상세보기</span>
-                            <img src="./images/plus15.png" alt="">
-                        </a> -->
+                        /
                     </div>
                     <div class="swiper-slide slide2">
                         <!-- <h2>더 문</h2>
@@ -133,10 +128,10 @@
         <div class="chart">
             <div class="c_top">
                 <h1>MOVIE CHART</h1>
-                <p>
+                <a href="#" class="plus">
                     <span>더보기</span>
                     <img src="./images/plus15.png" alt="">
-                </p>
+                </a>
             </div>
             <ul>
                 <li class="ranking">
@@ -144,11 +139,8 @@
                         <p>1</p>
                     </a>
                     <div class="contents">
-                        <h2>밀수</h2>
-                        <p class="etc">
-                            <span>예매율</span>
-                            <span>33.0%</span>
-                        </p>
+                        <!-- <h2>밀수</h2> -->
+                        <button type="button" id="like"><img src="./images/heart2.png" alt="">1.5k</button>
                         <a href="#">예매하기</a>
                     </div>
                 </li>
@@ -157,11 +149,8 @@
                         <p>2</p>
                     </a>
                     <div class="contents">
-                        <h2>더 문</h2>
-                        <p class="etc">
-                            <span>예매율</span>
-                            <span>12.5%</span>
-                        </p>
+                        <!-- <h2>더 문</h2> -->
+                        <button type="button" id="like"><img src="./images/heart2.png" alt="">1.6k</button>
                         <a href="#">예매하기</a>
                     </div>
                 </li>
@@ -170,11 +159,8 @@
                         <p>3</p>
                     </a>
                     <div class="contents">
-                        <h2>엘리멘탈</h2>
-                        <p class="etc">
-                            <span>예매율</span>
-                            <span>11.4%</span>
-                        </p>
+                        <!-- <h2>엘리멘탈</h2> -->
+                        <button type="button" id="like"><img src="./images/heart2.png" alt="">3.4k</button>
                         <a href="#">예매하기</a>
                     </div>
                 </li>
@@ -183,11 +169,8 @@
                         <p>4</p>
                     </a>
                     <div class="contents">
-                        <h2>미션 임파서블</h2>
-                        <p class="etc">
-                            <span>예매율</span>
-                            <span>8.9%</span>
-                        </p>
+                        <!-- <h2>미션 임파서블</h2> -->
+                        <button type="button" id="like"><img src="./images/heart2.png" alt="">1.2k</button>
                         <a href="#">예매하기</a>
                     </div>
                 </li>
@@ -197,7 +180,10 @@
             <div class="cine_wrap">
                 <div class="cine_title">
                     <h1>혜택</h1>
-                    <p><span>더보기</span><img src="./images/plus15.jpg" alt=""></p>
+                    <a href="#" class="plus">
+                        <span>더보기</span>
+                        <img src="./images/plus15.png" alt="">
+                    </a>
                 </div>
                 <div class="banner">
                     <div class="left">
@@ -213,23 +199,23 @@
                 </div>
                 <div class="user_wrap">
                     <a href="#">
-                        <img src="#" alt="">
+                        <img src="./images/vip.png" alt="">
                         <span>VIP LOUNGE</span>
                     </a>
                     <a href="#">
-                        <img src="#" alt="">
+                        <img src="./images/membership.png" alt="">
                         <span>멤버십</span>
                     </a>
                     <a href="#">
-                        <img src="#" alt="">
+                        <img src="./images/salecard.png" alt="">
                         <span>할인카드 안내</span>
                     </a>
                     <a href="#">
-                        <img src="#" alt="">
+                        <img src="./images/gift.png" alt="">
                         <span>이벤트</span>
                     </a>
                     <a href="#">
-                        <img src="#" alt="">
+                        <img src="./images/store.png" alt="">
                         <span>스토어</span>
                     </a>
                 </div>
@@ -238,7 +224,7 @@
     </main>
     <footer>
         <div class="top">
-            <div class="fnb_top">
+            <div class="top_fnb">
                 <a href="#">회사소개</a>
                 <a href="#">지속가능경영</a>
                 <a href="#">채용정보</a>
@@ -248,22 +234,20 @@
                 <a href="#">개인정보처리방침</a>
                 <a href="#">윤리경영</a>
             </div>
-        </div>
-        <div class="btm">
-            <div class="btm_left">
-                <h2>MOVIEVERSE</h2>
-                <address>
-                    서울특별시 00구 00대로 123 <a href="#">찾아오시는 길</a><br>
-                    대표전화 : 02-123 또는 02-1234<br>
-                    &copy; MOVIEVERSE all rights reserved
-                </address>
-            </div>
-            <div class="btm_right">
+            <div class="top_right">
                 <a href="#">유튜브</a>
+                <a href="#">인스타그램</a>
                 <a href="#">페이스북</a>
                 <a href="#">트위터</a>
-                <a href="#">인스타그램</a>
             </div>
+        </div>
+        <div class="btm">
+            <h2><img src="./images/logo2.png" alt=""></h2>
+            <address>
+                서울특별시 00구 00대로 123 <a href="#">찾아오시는 길</a><br>
+                대표전화 : 02-123 또는 02-1234<br>
+                &copy; MOVIEVERSE all rights reserved
+            </address>
         </div>
     </footer>
     <script src="./script/script.js"></script>

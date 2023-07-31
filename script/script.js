@@ -45,7 +45,7 @@ category[5].addEventListener('mouseout',function(){
 
 const movie_slide = new Swiper('#movie_slide',{
     autoplay:{
-        delay:1000,
+        delay:5000,
         disableOnInteraction:false 
     }, 
     loop:true, 
