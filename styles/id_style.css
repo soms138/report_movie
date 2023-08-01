@@ -1,0 +1,15 @@
+section {}
+section .login_box {}
+section .login_box form {}
+section .login_box form fieldset {}
+section .login_box form fieldset h1 {}
+.input {}
+.input .login {}
+.input .login #id {}
+.input .login #pwd {}
+.input li .id_fix {}
+.input li span {}
+.input .etc {}
+.input .etc > span {}
+.input .other {}
+.input .other img {}

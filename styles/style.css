@@ -4,7 +4,7 @@ header .h_top,header .h_title,header .nav_open,main .chart,main .cine_wrap,foote
     width: 1160px;
 }
 header {
-    background: #181f2b;
+    background: linear-gradient(90deg, rgba(24,31,43,1) 13%, rgba(37,36,81,1), rgba(24,31,43,1) 87%); 
     padding: 30px 0;
 }
 header .h_top {
@@ -130,7 +130,7 @@ main .slide::after {
     display: block;
     height: 650px;
     width: 100%;
-    background: linear-gradient(90deg, rgba(24,31,43,1) 13%, rgba(24,31,43,0) 50%, rgba(24,31,43,1) 87%);
+    background: linear-gradient(90deg, rgba(24,31,43,1) 13%, rgba(24,31,43,0.25) 25%, rgba(24,31,43, 0) 50%, rgba(24,31,43,0.25) 75%, rgba(24,31,43,1) 87%); 
     position: absolute;
     left: 0; top: 0;
     z-index: 150;
@@ -153,7 +153,7 @@ main .slide #movie_slide .swiper-wrapper .slide2 {
     background-size: cover;
 }
 main .slide #movie_slide .swiper-wrapper .slide3 {
-    background: url(../images/slide3.jpg);
+    background: url(../images/slide3.jpg) 0 650px;
     background-size: cover;
 }
 main .slide #movie_slide .swiper-button-prev,
@@ -394,7 +394,7 @@ footer .top .top_right a:first-child {
     background-size: 100%;
 }
 footer .top .top_right a:first-child:hover {
-    background: url(../images/youtube2.png) no-repeat center;
+    background: url(../images/ico-youtube.png) no-repeat center;
     background-size: 100%;
 }
 footer .top .top_right a:nth-child(2) {
@@ -402,7 +402,7 @@ footer .top .top_right a:nth-child(2) {
     background-size: 100%;
 }
 footer .top .top_right a:nth-child(2):hover {
-    background: url(../images/instagram2.png) no-repeat center;
+    background: url(../images/ico-instagram.png) no-repeat center;
     background-size: 100%;
 }
 footer .top .top_right a:nth-child(3) {
@@ -410,7 +410,7 @@ footer .top .top_right a:nth-child(3) {
     background-size: 100%;
 }
 footer .top .top_right a:nth-child(3):hover {
-    background: url(../images/facebook2.png) no-repeat center;
+    background: url(../images/ico-facebook.png) no-repeat center;
     background-size: 100%;
 }
 footer .top .top_right a:nth-child(4) {
@@ -418,7 +418,7 @@ footer .top .top_right a:nth-child(4) {
     background-size: 100%;
 }
 footer .top .top_right a:nth-child(4):hover {
-    background: url(../images/twiter2.png) no-repeat center;
+    background: url(../images/ico-twitter.png) no-repeat center;
     background-size: 100%;
 }
 footer .btm {
