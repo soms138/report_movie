@@ -1,13 +1,70 @@
-section {}
-section .login_box {}
+section {
+    margin: 0 auto;
+    max-width: 1160px;
+    text-align: center;
+}
+section .login_box {
+    background: aqua;
+    padding: 50px;
+    margin: 0 auto;
+    /* width: calc(100% - 300px); */
+    width: 730px;
+}
 section .login_box form {}
 section .login_box form fieldset {}
-section .login_box form fieldset h1 {}
-.input {}
-.input .login {}
-.input .login #id {}
-.input .login #pwd {}
-.input li .id_fix {}
+section .login_box form fieldset h1 {
+    background: #503396;
+    border-radius: 10px 10px 0 0;
+    padding: 40px 0;
+}
+section .login_box form fieldset h1 img {
+    width: 300px;
+}
+.input {
+    background: #fff;
+    border: 1px solid #503396;
+    border-radius: 0 0 10px 10px;
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 300px;
+}
+.input .login {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.input .login .login_wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+}
+.input .login .login_wrap #id {
+    margin-bottom: 10px;
+    width: 230px;
+    height: 30px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+}
+.input .login .login_wrap #pwd {
+    width: 230px;
+    height: 30px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+}
+.input li button {
+    background: #503396;
+    color: #fff;
+    padding: 35px 30px;
+    border-radius: 10px;
+}
+.input li .id_fix {
+
+}
 .input li span {}
 .input .etc {}
 .input .etc > span {}

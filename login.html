@@ -6,6 +6,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>MEGABOX | 로그인</title>
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/id_style.css">
 </head>
 <body>
@@ -14,18 +15,20 @@
             <form action="#" method="post">
                 <fieldset>
                     <legend class="skip">로그인 양식</legend>
-                    <h1>로그인</h1>
+                    <h1><img src="./images/BI_white2.png" alt=""></h1>
                     <ul class="input">
                         <li class="login">
-                            <input type="text" id="id" placeholder="아이디">
-                            <input type="password" id="pwd" placeholder="비밀번호">
+                            <div class="login_wrap">
+                                <input type="text" id="id" placeholder="아이디">
+                                <input type="password" id="pwd" placeholder="비밀번호">
+                            </div>
+                            <button type="submit">로그인</button>
                         </li>
                         <li><input type="checkbox" name="id_fix" id="id_fix"><span>아이디 저장</span></li>
-                        <li><button type="submit">로그인</button></li>
                         <li class="etc">
                             <span>ID/PW 찾기</span>
                             <span>회원가입</span>
-                            <span>비회언 예매확인</span>
+                            <span>비회원 예매확인</span>
                         </li>
                         <li class="other">
                             <img src="./images/ico-naver.png" alt="네이버 로그인">
