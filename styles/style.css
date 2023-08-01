@@ -38,7 +38,7 @@ header .h_top .h_user a img {
     margin-right: 10px;
 }
 header .h_top .h_user a span {
-    font-size: 0.75rem;
+    
     color: #fff;
 }
 
@@ -260,6 +260,7 @@ main .chart ul .ranking .contents a {
     padding: 15px 0;
     width: 150px;
     background: #037b94;
+    border: 1px solid #037b94;
     border-radius: 10px;
     color: #fff;
 }
@@ -383,7 +384,7 @@ footer .top .top_fnb a:nth-child(7) {font-weight: 500;}
 footer .top .top_fnb a:last-child {margin-right: 0;}
 footer .top .top_right {}
 footer .top .top_right a {
-    width: 25px; height: 25px;
+    width: 35px; height: 35px;
     margin-right: 10px;
     display: inline-block;
     transition: all 0.1s both;

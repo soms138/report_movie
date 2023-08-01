@@ -4,11 +4,10 @@ section {
     text-align: center;
 }
 section .login_box {
-    background: aqua;
-    padding: 50px;
+    padding: 100px 50px;
     margin: 0 auto;
     /* width: calc(100% - 300px); */
-    width: 730px;
+    width: 700px;
 }
 section .login_box form {}
 section .login_box form fieldset {}
@@ -18,7 +17,7 @@ section .login_box form fieldset h1 {
     padding: 40px 0;
 }
 section .login_box form fieldset h1 img {
-    width: 300px;
+    width: 250px;
 }
 .input {
     background: #fff;
@@ -28,7 +27,7 @@ section .login_box form fieldset h1 img {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    height: 300px;
+    height: 330px;
 }
 .input .login {
     display: flex;
@@ -38,37 +37,50 @@ section .login_box form fieldset h1 img {
     width: 100%;
 }
 .input .login .login_wrap {
-    background-color: aqua;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 230px;
-    margin-right: 20px;
+    width: 250px;
+    margin-right: 10px;
 }
 .input .login .login_wrap #id {
-    background-color: aquamarine;
     margin-bottom: 10px;
-    height: 35px;
+    width: 250px;
+    height: 40px;
     padding: 0 5px;
     border: 1px solid #ccc;
 }
 .input .login .login_wrap #pwd {
-    width: 230px;
-    height: 35px;
+    width: 250px;
+    height: 40px;
     padding: 0 5px;
     border: 1px solid #ccc;
 }
 .input li button {
     background: #503396;
     color: #fff;
-    padding: 32px 30px;
+    padding: 37px 25px;
     border-radius: 10px;
+    font-size: 1.333rem;
 }
-.input li .id_fix {
-
+.input li:nth-child(2) {
+    text-align: start;
+    margin-left: 75px;
 }
+.input li #id_fix {margin-right: 5px;}
 .input li span {}
-.input .etc {}
-.input .etc > span {}
+.input .etc {
+    margin: 15px 0 5px;
+}
+.input .etc a span {
+    font-size: 0.8rem;
+    border-right: 1px solid #ccc;
+    padding: 0 20px 0 15px;
+}
+.input .etc a:last-child span {border-right: 0;}
 .input .other {}
-.input .other img {}
+.input .other a {
+    margin-right: 30px;
+}
+.input .other a img {}
+.input .other img:last-child {margin-right: 0;}
