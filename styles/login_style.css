@@ -67,7 +67,10 @@ section .login_box form fieldset h1 img {
     text-align: start;
     margin-left: 75px;
 }
-.input li #id_fix {margin-right: 5px;}
+.input li #id_fix {
+    margin-right: 5px;
+    cursor: pointer;
+}
 .input li span {}
 .input .etc {
     margin: 15px 0 5px;
